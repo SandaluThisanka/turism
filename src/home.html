@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Travelinga - UI</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    .hero-bg{
+      background-image:url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1600');
+      background-size:cover;
+      background-position:center;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-50">
+
+  <!-- ===================== -->
+  <!-- HERO -->
+  <!-- ===================== -->
+  <div class="max-w-7xl mx-auto px-4 py-8">
+    <div class="relative hero-bg overflow-hidden rounded-[2.5rem] p-8 md:p-12 lg:p-16 min-h-[460px] md:min-h-[520px] flex flex-col justify-between">
+
+      <div class="absolute inset-0 bg-[#0B2A3C]/55"></div>
+
+      <div class="relative z-10 mb-6">
+        <span class="inline-flex items-center px-5 py-2 rounded-full text-sm font-semibold
+                     border border-white/40 bg-white/10 backdrop-blur-sm text-white">
+          Featured Destination
+        </span>
+      </div>
+
+      <div class="relative z-10 text-white mb-8 max-w-2xl">
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-light tracking-wide leading-tight mb-4">
+          Escape to the Mountains
+        </h1>
+        <p class="text-base md:text-lg text-white/80 mb-8">
+          Discover serenity in the misty hills of Ella
+        </p>
+
+        <button class="bg-white text-gray-900 px-7 py-3.5 rounded-full font-semibold shadow-sm
+                       hover:bg-white/90 transition inline-flex items-center gap-3">
+          Explore Ella
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          </svg>
+        </button>
+      </div>
+
+      <div class="relative z-10">
+        <div class="w-full max-w-7xl mx-auto rounded-[1.75rem] px-5 py-4
+                    border border-white/20 bg-white/15 backdrop-blur-xl
+                    flex items-center gap-4">
+
+          <div class="flex items-center gap-3 flex-1">
+            <div class="w-10 h-10 rounded-full bg-black/10 flex items-center justify-center">
+              <svg class="w-5 h-5 text-white/90" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+              </svg>
+            </div>
+
+            <input
+              type="text"
+              placeholder="Where to?"
+              class="w-full bg-transparent outline-none border-none
+                     placeholder-white/75 text-white text-lg font-semibold"
+            />
+          </div>
+
+          <button class="shrink-0 inline-flex items-center gap-2
+                         bg-white text-gray-900 px-5 py-2.5 rounded-full
+                         font-semibold shadow-sm hover:bg-white/90 transition">
+            <span class="inline-flex items-center justify-center w-9 h-9 rounded-full bg-gray-100">
+              <svg class="w-5 h-5 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </span>
+            <span>Now</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+        </div>
+
+        <div class="flex justify-center gap-2 mt-5">
+          <div class="w-10 h-1.5 bg-amber-400 rounded-full"></div>
+          <div class="w-2 h-2 bg-white/40 rounded-full"></div>
+          <div class="w-2 h-2 bg-white/40 rounded-full"></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ===================== -->
+  <!-- NAV TABS (GRID FULL WIDTH) -->
+  <!-- ===================== -->
+  <div class="max-w-7xl mx-auto px-4 pt-4">
+    <div class="grid grid-cols-3 md:grid-cols-6 border-b border-gray-200">
+
+      <button class="relative flex flex-col md:flex-row items-center justify-center gap-2 md:gap-3
+                     py-4 text-blue-700 font-semibold hover:bg-gray-50 transition">
+        <span class="text-2xl">🚗</span>
+        <span class="text-base md:text-lg">Rides</span>
+        <span class="absolute left-0 bottom-0 w-full h-[3px] bg-blue-700 rounded-full"></span>
+      </button>
+
+      <button class="relative flex flex-col md:flex-row items-center justify-center gap-2 md:gap-3
+                     py-4 text-gray-800 font-semibold hover:text-blue-700 hover:bg-gray-50 transition">
+        <span class="text-2xl">🏨</span>
+        <span class="text-base md:text-lg">Hotel</span>
+      </button>
+
+      <button class="relative flex flex-col md:flex-row items-center justify-center gap-2 md:gap-3
+                     py-4 text-gray-800 font-semibold hover:text-blue-700 hover:bg-gray-50 transition">
+        <span class="text-2xl">🗺️</span>
+        <span class="text-base md:text-lg">Guide</span>
+      </button>
+
+      <button class="relative flex flex-col md:flex-row items-center justify-center gap-2 md:gap-3
+                     py-4 text-gray-800 font-semibold hover:text-blue-700 hover:bg-gray-50 transition">
+        <span class="text-2xl">🎉</span>
+        <span class="text-base md:text-lg">Events</span>
+      </button>
+
+      <button class="relative flex flex-col md:flex-row items-center justify-center gap-2 md:gap-3
+                     py-4 text-gray-800 font-semibold hover:text-blue-700 hover:bg-gray-50 transition">
+        <span class="text-2xl">🏢</span>
+        <span class="text-base md:text-lg">Agency</span>
+      </button>
+
+      <button class="relative flex flex-col md:flex-row items-center justify-center gap-2 md:gap-3
+                     py-4 text-gray-800 font-semibold hover:text-blue-700 hover:bg-gray-50 transition">
+        <span class="text-2xl">💆</span>
+        <span class="text-base md:text-lg">Spa</span>
+      </button>
+
+    </div>
+  </div>
+
+  <!-- ===================== -->
+  <!-- Suggestions -->
+  <!-- ===================== -->
+  <div class="max-w-7xl mx-auto px-4 py-8">
+    <div class="flex items-center justify-between mb-6">
+      <h2 class="text-2xl font-bold">Suggestions</h2>
+      <button class="w-11 h-11 bg-white rounded-full shadow-sm hover:shadow-md flex items-center justify-center transition">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+        </svg>
+      </button>
+    </div>
+
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6">
+      <div class="bg-gray-100 rounded-3xl p-8 flex flex-col items-center justify-center gap-4 hover:bg-gray-200 transition cursor-pointer">
+        <div class="text-5xl">🏨</div><span class="font-semibold text-base">Hotel</span>
+      </div>
+      <div class="bg-gray-100 rounded-3xl p-8 flex flex-col items-center justify-center gap-4 hover:bg-gray-200 transition cursor-pointer">
+        <div class="text-5xl">🚕</div><span class="font-semibold text-base">Ride</span>
+      </div>
+      <div class="bg-gray-100 rounded-3xl p-8 flex flex-col items-center justify-center gap-4 hover:bg-gray-200 transition cursor-pointer">
+        <div class="text-5xl">🎫</div><span class="font-semibold text-base">Reserve</span>
+      </div>
+      <div class="bg-gray-100 rounded-3xl p-8 flex flex-col items-center justify-center gap-4 hover:bg-gray-200 transition cursor-pointer">
+        <div class="text-5xl">🚗</div><span class="font-semibold text-base">Rental Cars</span>
+      </div>
+      <div class="bg-gray-100 rounded-3xl p-8 flex flex-col items-center justify-center gap-4 hover:bg-gray-200 transition cursor-pointer">
+        <div class="text-5xl">🍽️</div><span class="font-semibold text-base">Restaurant</span>
+      </div>
+      <div class="bg-gray-100 rounded-3xl p-8 flex flex-col items-center justify-center gap-4 hover:bg-gray-200 transition cursor-pointer">
+        <div class="text-5xl">🎊</div><span class="font-semibold text-base">Event</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== -->
+  <!-- Ways to save (TOP 4) + Trips (2nd row) - Like your screenshot -->
+  <!-- ===================== -->
+  <div class="max-w-7xl mx-auto px-4 py-8">
+    <h2 class="text-2xl font-bold mb-6">Ways to save with Travelinga</h2>
+
+    <!-- Top row (4 cards) -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+
+      <div>
+        <div class="rounded-2xl overflow-hidden">
+          <img class="w-full aspect-[4/3] object-cover"
+               src="https://images.unsplash.com/photo-1551966775-a4ddc8df052b?w=1200"
+               alt="Tuk Rides">
+        </div>
+        <div class="mt-3">
+          <h3 class="font-bold">Tuk Rides</h3>
+          <p class="text-sm text-gray-500 mt-1">Up front prices , doorstep pick-ups</p>
+        </div>
+      </div>
+
+      <div>
+        <div class="rounded-2xl overflow-hidden">
+          <img class="w-full aspect-[4/3] object-cover"
+               src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200"
+               alt="Moto trips">
+        </div>
+        <div class="mt-3">
+          <h3 class="font-bold">Moto trips</h3>
+          <p class="text-sm text-gray-500 mt-1">affordable motorcycle pick ups</p>
+        </div>
+      </div>
+
+      <div>
+        <div class="rounded-2xl overflow-hidden">
+          <img class="w-full aspect-[4/3] object-cover"
+               src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=1200"
+               alt="Tuk Rides">
+        </div>
+        <div class="mt-3">
+          <h3 class="font-bold">Tuk Rides</h3>
+          <p class="text-sm text-gray-500 mt-1">Up front prices , doorstep pick-ups</p>
+        </div>
+      </div>
+
+      <div>
+        <div class="rounded-2xl overflow-hidden">
+          <img class="w-full aspect-[4/3] object-cover"
+               src="https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?w=1200"
+               alt="Moto trips">
+        </div>
+        <div class="mt-3">
+          <h3 class="font-bold">Moto trips</h3>
+          <p class="text-sm text-gray-500 mt-1">affordable motorcycle pick ups</p>
+        </div>
+      </div>
+
+    </div>
+
+   <!-- ✅ Promo Cards Row -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-10">
+
+  <!-- Card 1 -->
+  <div class="flex rounded-3xl overflow-hidden h-[170px] bg-white shadow-sm">
+    <div class="w-[42%] bg-[#9CA3AF] px-5 py-4 flex flex-col justify-between">
+
+      <div class="text-white font-semibold text-[17px] leading-[1.12]">
+        Enjoy The<br>
+        Holiday in<br>
+        <span class="text-gray-900 font-extrabold">Sri Lanka</span>
+      </div>
+
+      <button class="bg-gray-900 text-white px-6 py-2
+                     rounded-full text-sm font-semibold">
+        Book now
+      </button>
+    </div>
+
+    <div class="w-[58%]">
+      <img class="w-full h-full object-cover"
+           src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=1200&auto=format&fit=crop&q=60"
+           alt="">
+    </div>
+  </div>
+
+
+  <!-- Card 2 -->
+  <div class="flex rounded-3xl overflow-hidden h-[170px] bg-white shadow-sm">
+    <div class="w-[42%] bg-[#FACC15] px-5 py-4 flex flex-col justify-between">
+
+      <div class="text-white font-semibold text-[17px] leading-[1.12]">
+        Safe &<br>
+        Reliable<br>
+        taxi for<br>
+        <span class="text-gray-900 font-extrabold">Trips</span>
+      </div>
+
+      <button class="bg-gray-900 text-white px-6 py-2
+                     rounded-full text-sm font-semibold">
+        Book now
+      </button>
+    </div>
+
+    <div class="w-[58%]">
+      <img class="w-full h-full object-cover"
+           src="https://images.unsplash.com/photo-1502877338535-766e1452684a?w=1200&auto=format&fit=crop&q=60"
+           alt="">
+    </div>
+  </div>
+
+
+  <!-- Card 3 -->
+  <div class="flex rounded-3xl overflow-hidden h-[170px] bg-white shadow-sm">
+    <div class="w-[42%] bg-[#C7BDB4] px-5 py-4 flex flex-col justify-between">
+
+      <div class="text-white font-semibold text-[17px] leading-[1.12]">
+        Save the<br>
+        time and<br>
+        money for<br>
+        <span class="text-white font-extrabold">Trips</span>
+      </div>
+
+      <button class="bg-gray-900 text-white px-6 py-2
+                     rounded-full text-sm font-semibold">
+        Book now
+      </button>
+    </div>
+
+    <div class="w-[58%]">
+      <img class="w-full h-full object-cover"
+           src="https://images.unsplash.com/photo-1520975958225-1a1c35f1f3f9?w=1200&auto=format&fit=crop&q=60"
+           alt="">
+    </div>
+  </div>
+
+
+  <!-- Card 4 -->
+  <div class="flex rounded-3xl overflow-hidden h-[170px] bg-white shadow-sm">
+    <div class="w-[42%] bg-[#60A5FA] px-5 py-4 flex flex-col justify-between">
+
+      <div class="text-white font-semibold text-[17px] leading-[1.12]">
+        Get the<br>
+        guide to<br>
+        enjoy the<br>
+        <span class="text-white font-extrabold">Trips</span>
+      </div>
+
+      <button class="bg-gray-900 text-white px-6 py-2
+                     rounded-full text-sm font-semibold">
+        Book now
+      </button>
+    </div>
+
+    <div class="w-[58%]">
+      <img class="w-full h-full object-cover"
+           src="https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?w=1200&auto=format&fit=crop&q=60"
+           alt="">
+    </div>
+  </div>
+
+</div>
+
+
+  <!-- ===================== -->
+  <!-- More ways -->
+  <!-- ===================== -->
+  <div class="max-w-7xl mx-auto px-4 py-8 mb-12">
+    <h2 class="text-2xl font-bold mb-6">More ways to user Travelinga</h2>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+
+      <div>
+        <div class="rounded-2xl overflow-hidden">
+          <img class="w-full aspect-[4/3] object-cover"
+               src="https://images.unsplash.com/photo-1585421514738-01798e348b17?w=1200"
+               alt="Send Package">
+        </div>
+        <div class="mt-3">
+          <h3 class="font-bold">Send Package</h3>
+          <p class="text-sm text-gray-500 mt-1">On-demand delivery across town</p>
+        </div>
+      </div>
+
+      <div>
+        <div class="rounded-2xl overflow-hidden bg-pink-100">
+          <img class="w-full aspect-[4/3] object-cover"
+               src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=1200"
+               alt="Safety Toolkit">
+        </div>
+        <div class="mt-3">
+          <h3 class="font-bold">Safety Toolkit</h3>
+          <p class="text-sm text-gray-500 mt-1">on-trip with safety issues</p>
+        </div>
+      </div>
+
+      <div>
+        <div class="rounded-2xl overflow-hidden">
+          <img class="w-full aspect-[4/3] object-cover"
+               src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=1200"
+               alt="Premier trips">
+        </div>
+        <div class="mt-3">
+          <h3 class="font-bold">Premier trips</h3>
+          <p class="text-sm text-gray-500 mt-1">Top-rated drivers, newer cars</p>
+        </div>
+      </div>
+
+      <div>
+        <div class="rounded-2xl overflow-hidden bg-pink-100">
+          <img class="w-full aspect-[4/3] object-cover"
+               src="https://images.unsplash.com/photo-1520975958225-1a1c35f1f3f9?w=1200"
+               alt="Safety Toolkit">
+        </div>
+        <div class="mt-3">
+          <h3 class="font-bold">Safety Toolkit</h3>
+          <p class="text-sm text-gray-500 mt-1">on-trip with safety issues</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
